@@ -91,7 +91,7 @@ stages:
               connectTo: 'VsTeam'
               connectedServiceName: 'Visual Studio Marketplace'
               fileType: 'vsix'
-              vsixFile: '/Dataeva.*.vsix'
+              vsixFile: '/*.vsix'
               publisherId: '$(PublisherID)'
               extensionId: '$(ExtensionID)'
               extensionName: '$(ExtensionName)'
