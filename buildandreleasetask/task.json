@@ -1,0 +1,31 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Microsoft/azure-pipelines-task-lib/master/tasks.schema.json",
+    "id": "88509740-da3e-4ac3-916c-a3521323b926",
+    "name": "MyFirstTask",
+    "friendlyName": "My First Task",
+    "description": "My First Azure Pipeline Task",
+    "helpMarkDown": "",
+    "category": "Utility",
+    "author": "Oğuzhan Mevsim",
+    "version": {
+        "Major": 0,
+        "Minor": 1,
+        "Patch": 0
+    },
+    "instanceNameFormat": "Echo $(samplestring)",
+    "inputs": [
+        {
+            "name": "samplestring",
+            "type": "string",
+            "label": "Sample String Labe",
+            "defaultValue": "Sample String Default Value",
+            "required": true,
+            "helpMarkDown": "A sample string"
+        }
+    ],
+    "execution": {
+        "Node10": {
+            "target": "index.js"
+        }
+    }
+}
