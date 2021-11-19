@@ -71,7 +71,7 @@ stages:
           - task: PublishBuildArtifacts@1
             inputs:
               PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-              ArtifactName: 'PublishedArtifact'
+              ArtifactName: '$(ArtifactName)'
               publishLocation: 'Container'
   - stage: Download_build_artifacts_and_publish_the_extension
     jobs:
